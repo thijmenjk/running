@@ -52,7 +52,7 @@ distance = st.sidebar.number_input(
 weight = st.sidebar.number_input(
     "Weight (kg)",
     min_value=1.0,
-    value=70.0,
+    value=76.0,
     step=0.5,
     help="Enter your body weight in kilograms.",
 )
@@ -71,14 +71,14 @@ st.sidebar.header("Fueling Plan Details")
 fuel_interval = st.sidebar.number_input(
     "Fueling Interval (km)",
     min_value=0.1,
-    value=4.0,
+    value=5.0,
     step=0.1,
     help="Distance between fueling stops.",
 )
 fuel_start = st.sidebar.number_input(
     "Start Fueling at (km)",
     min_value=0.0,
-    value=5.0,
+    value=15.0,
     step=0.1,
     help=(
         "Distance at which fueling begins. A typical recommendation is to start refueling once glycogen stores begin to decline."
